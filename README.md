@@ -2,11 +2,13 @@
 
 ## Title
 
-Build a powerful Natural language SQL querying tool with rag leveraging GenAI using Amazon Bedrock for Enterprise Business users 
+Develop a generative AI-powered application to explain advanced RAG design patterns with AWS
 
 ## Introduction
 
-This repository contains the source code for use cases in which Streamlit applications interact with a Large Language Model (LLM) using the Langchain framework, as well as for text-to-SQL tasks employing Amazon Bedrock and the titan-tg1-large LLM.
+Retrieval-Augmented Generation (RAG) pipelines have become a powerful method for incorporating external knowledge sources into large language models (LLMs). This integration allows the models to generate more informed and context-aware outputs. As the field advances, researchers and practitioners are investigating a variety of sophisticated techniques to optimize and enhance the retrieval and generation processes within RAG systems.
+
+This repository contains the source code for use cases where Streamlit applications interact with various advanced RAG design patterns using the Langchain framework and AWS services such as Amazon Bedrock.
 
 [Amazon Bedrock](https://aws.amazon.com/bedrock/) is a fully managed service designed for utilizing foundation models, providing a unified set of APIs for accessing models from Amazon and third-party sources, catering to both text and image generation.
 
@@ -14,7 +16,7 @@ This repository contains the source code for use cases in which Streamlit applic
 
 [Streamlit](https://streamlit.io/) empowers us to rapidly develop web interfaces for our Python code, eliminating the need for front-end development expertise. Streamlit is particularly valuable for creating proof-of-concept applications that can be shared with a broad audience, spanning both technical and non-technical individuals.
 
-In this repository, we will utilize LangChain to develop generative AI prototypes by leveraging Amazon Bedrock. The provided source code will guide viewers in building a robust natural language SQL querying tool, powered by GenAI through Amazon Bedrock. This tool is intended for enterprise business users, including those who may not be proficient in writing SQL but possess business knowledge about the enterprise, with limited technical attribute knowledge.
+In this repository, we will use LangChain to develop generative AI prototypes by leveraging Amazon Bedrock. The provided source code will guide users in building a robust Streamlit application powered by GenAI through Amazon Bedrock, demonstrating a variety of advanced RAG design patterns with minimal technical knowledge.
 
 This source code is designed to equip you with the necessary knowledge and skills to effectively utilize the libraries and models, enabling you to create prototypes for a wide range of use cases.
 
@@ -25,22 +27,22 @@ Once you have completed the prerequisites section, you are free to proceed with 
 The intended audience for this source code encompasses architects, software developers, product managers, and individuals with an interest in constructing generative AI applications. While a background in software development or familiarity with AWS services can be advantageous, it is not a prerequisite for participating in this workshop. Moreover, no prior experience in data science is necessary.
  
 ### Account allowlisting
-To run this source code, your account must be included on the Amazon Bedrock allowlist. Please ensure that your account is activated and allowlisted before executing this source code.
+To run this source code, your account must be included on the Amazon Bedrock and AWS Cloud9 allowlist. Please ensure that your account is activated and allowlisted before executing this source code.
 
 ### Supported Regions
-This source code is meant to be run in any region where your Bedrock access has been enabled.
+This source code is meant to be run in any region where your Amazon Bedrock access has been enabled.
 
  
 ### Costs when running from your own account
-If you are running this in your own account, please be aware that costs may be incurred. The exact expenses depend on factors such as the frequency of your calls to Bedrock, the length of tokens or the size of images in your calls, and the specific models you utilize. For detailed pricing information for each model, please refer to the Amazon Bedrock console.
+If you are running this in your own account, please be aware that costs may be incurred. The exact expenses depend on factors such as the frequency of your calls to Amazon Bedrock, the length of tokens or the size of images in your calls, and the specific models you utilize. For detailed pricing information for each model, please refer to the Amazon Bedrock console.
 
 ### Time to complete
 
-Executing this source code should take approximately 30 minutes to complete.
+Executing this source code should take approximately 60 minutes to complete.
 
 ### Solution overview
 
-In this source code, we will build a simple powerful Natural language SQL querying tool application with Titan Text, Titan Embeddings, LangChain, and Streamlit.
+In this source code, we will build a simple powerful Streamlit application with Anthropic claude-3-sonnet, Titan Embeddings, LangChain, and Streamlit.
 
 Large language models are prone to hallucination, which is just a fancy word for making up a response. To correctly and consistently answer questions, we need to ensure that the model has real information available to support its responses. We use the Retrieval-Augmented Generation (RAG) pattern to make this happen.
 
